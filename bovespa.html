@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Cotações Bovespa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="STATIC/css/bovespa.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="STATIC/css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+</head>
+<body>
+
+  <!-- header start -->
+  <header class="header">
+     <div class="container">
+        <div class="header-main">
+           <div class="logo">
+              
+              <img src="STATIC/img/img-logo.png" href="#">
+           </div>
+           <div class="open-nav-menu">
+              <span></span>
+           </div>
+           <div class="menu-overlay">
+           </div>
+           <!-- navigation menu start -->
+           <nav class="nav-menu">
+             <div class="close-nav-menu">
+                <img src="STATIC/img/close.svg" alt="close">
+             </div>
+             <ul class="menu">
+                <li class="menu-item menu-item-has-children">
+                   <a href="index.html" data-toggle="sub-menu">Cotações <i class="plus"></i></a>
+                   <ul class="sub-menu">
+                       <li class="menu-item"><a href="index.html">Home 1</a></li>
+                       <li class="menu-item"><a href="#">Home 2</a></li>
+                       <li class="menu-item"><a href="#">Home 3</a></li>
+                       <li class="menu-item"><a href="#">Home 4</a></li>
+                   </ul>
+                </li>
+                
+                <li class="menu-item">
+                   <a href="bovespa.html">Bovespa</a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                   <a href="#" data-toggle="sub-menu">Arquivos <i class="plus"></i></a>
+                   <ul class="sub-menu">
+                       <li class="menu-item"><a href="#">page 1</a></li>
+                       <li class="menu-item"><a href="#">page 2</a></li>
+                       <li class="menu-item"><a href="#">page 3</a></li>
+                       <li class="menu-item"><a href="#">page 4</a></li>
+                   </ul>
+                </li>
+                <li class="menu-item">
+                   <a href="#">Imagens</a>
+                </li>
+                <li class="menu-item">
+                   <a href="#">Temperaturas</a>
+                </li>
+             </ul>
+           </nav>
+           <!-- navigation menu end -->
+        </div>
+     </div>
+  </header>
+  <!-- header end -->
+
+ <!-- home section start -->
+ 
+ <section class="home-section">
+    <div class="container">
+        <a class="navbar-brand" href="bovespa.html"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+
+    <!-- Formulário de pesquisa de ativo -->
+		
+		<div id="search">
+			<form class="d-flex" action="" method="POST" id="myForm">
+			  <input class="form-control me-2 input-width" type="search" id="txtSymbol" placeholder="PETR4.SA" aria-label="Search">
+			  <button class="btn btn-success" type="button" onclick="validar()">Pesquisar</button>
+			</form>		
+		</div>
+		
+		<!-- Informações sobre erros -->
+		<div id="error">
+			Deu erro!
+		</div>
+		
+		<!-- Exibição dos dados -->
+		
+		<div id="wrapper">
+			<div id="table" class="table-div">
+				<table id="series-table" class="table">
+				  <thead>
+					<tr class="table-primary">			  
+					  <th scope="col">Data</th>
+					  <th scope="col">Abertura</th>
+					  <th scope="col">Fechamento</th>
+					</tr>
+				  </thead>
+				  <tbody></tbody>
+				</table>	
+			</div>
+			
+			<div id="chart-column" class="column-chart"></div>
+		</div>
+		
+		<div class="col-md-12">
+		<div id="chart-line" class="line-chart"></div>
+		</div>		
+	</div>       
+      
+    </div>
+ </section>
+
+    
+
+ </section>
+ <!-- home section end -->
+ <section class="footer">
+  <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+  
+  
+  </div>
+  <ul class="list">
+      <li>
+          <a href="#">Inicio</a>
+      </li>
+      <li>
+          <a href="#">Sobre</a>
+      </li>
+      <li>
+          <a href="#">Termos</a>
+      </li>
+      <li>
+          <a href="#">Politica de privacidade</a>
+      </li>
+   </ul>
+   <p class="copyright">
+      ConversorBR @ 2021
+   </p>
+ 
+ </section>
+ 
+ 
+ 
+
+<!-- Inclusão dos scripts -->
+<script type="text/javascript" src="STATIC/js/alphavantage.js"></script>			
+<script type="text/javascript" src="STATIC/js/bootstrap.min.js"></script>
+<script src="STATIC/js/script2.js"></script>
+</body>
+</html>
