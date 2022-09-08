@@ -15,6 +15,7 @@ function validar(){
 		document.getElementById('error').innerHTML = 'Código de ação inválido!';
 		document.getElementById('txtSymbol').focus();		
 	}
+
 	else {
 		document.getElementById('error').style.display = 'none';
 		lineChartData = [ ['',0,0] ];

@@ -4,7 +4,7 @@ const amountEl_one = document.getElementById('amount-one');
 const amountEl_two = document.getElementById('amount-two');
 
 const rateEl = document.getElementById('rate');
-const swap = document.getElementById('swap');
+const swap = document.getElementById('send');
 
 // Fetch exchange rates and update the dome
 function calculate() {
